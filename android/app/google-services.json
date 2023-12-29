@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "246790377955",
+    "project_id": "life-of-designer",
+    "storage_bucket": "life-of-designer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246790377955:android:b337fbcf6ffe8a1c2910d6",
+        "android_client_info": {
+          "package_name": "com.lifeofdesigner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246790377955-4cnqipp4kb1hac1nuit9kh7t87smjj7p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifeofdesigner",
+            "certificate_hash": "4b4b1458d07089193363c4ab295e36015291b583"
+          }
+        },
+        {
+          "client_id": "246790377955-iccr29hrqlhes9nnqnv1q280423pmedv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifeofdesigner",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "246790377955-04v60e6v5nuaoiqppdaa103rcsbu5g7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW59jkbWSFDiYIsgSWxX75Lbbm31A7YZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246790377955-04v60e6v5nuaoiqppdaa103rcsbu5g7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

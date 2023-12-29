@@ -1,0 +1,25 @@
+keytool -genkeypair -v -storetype PKCS12 -keystore ldesigner-upload-key.keystore -alias ldesigner-key-alias -keyalg RSA -keysize 2048 -validity 10000
+
+
+What is your first and last name?
+  [Unknown]:  Lynn
+What is the name of your organizational unit?
+  [Unknown]: IT 
+What is the name of your organization?
+  [Unknown]:  Life of Designer LLC
+What is the name of your City or Locality?
+  [Unknown]:  Texas
+What is the name of your State or Province?
+  [Unknown]:  Texas
+What is the two-letter country code for this unit?
+  [Unknown]:  US
+
+
+MYAPP_UPLOAD_STORE_FILE=ldesigner-upload-key.keystore
+MYAPP_UPLOAD_KEY_ALIAS=ldesigner-key-alias
+MYAPP_UPLOAD_STORE_PASSWORD=ldesigner2022
+MYAPP_UPLOAD_KEY_PASSWORD=ldesigner2022
+
+org.gradle.daemon=true
+org.gradle.configureondemand=true
+org.gradle.jvmargs=-Xmx4g -XX:MaxPermSize=2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8

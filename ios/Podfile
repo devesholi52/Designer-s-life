@@ -1,0 +1,48 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '13.0'
+
+target 'LifeOfDesigner' do
+  config = use_native_modules!
+
+
+  pod 'FirebaseCoreInternal',  :modular_headers => true
+  pod 'GoogleUtilities',  :modular_headers => true
+
+
+  pod 'Firebase/Analytics', '~> 8.15.0'
+  #pod 'Firebase/Core', '~> 8.15.0'
+  pod 'Firebase/Messaging', '~> 8.15.0'
+  pod 'Firebase/Auth', '~> 8.15.0'
+  pod 'GoogleSignIn', '~> 6.1.0'
+
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false
+  )
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-async-storage/async-storage'
+
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+  target 'LifeOfDesignerTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable the next line.
+  use_flipper!()
+
+  post_install do |installer|
+    react_native_post_install(installer)
+    #__apply_Xcode_12_5_M1_post_install_workaround(installer)
+  end
+end
